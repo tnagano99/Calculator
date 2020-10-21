@@ -2,27 +2,33 @@
 function add(x, y) {
     let z = Number(x);
     let w = Number(y);
-    return z + w;
+    let v = z + w;
+    return Number(v.toFixed(4));
 }
 
 function subtract(x, y) {
-    return x - y;
+    let v = x - y;
+    return Number(v.toFixed(4));
 }
 
 function multiply(x, y) {
-    return x * y;
+    let v = x * y;
+    return Number(v.toFixed(4));
 }
 
 function divide(x, y) {
-    return x / y;
+    let v = x / y;
+    return Number(v.toFixed(4));
 }
 
 function exp(x) {
-    return x ** 2;
+    let v = x ** 2;
+    return Number(v.toFixed(4));
 }
 
 function sqrt(x) {
-    return x ** 0.5;
+    let v = x ** 0.5
+    return Number(v.toFixed(4));
 }
 
 function modulo(x, y) {
