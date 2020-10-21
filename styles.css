@@ -1,0 +1,72 @@
+body {
+    background-image: url("desk.jpg");
+}
+/* container for calculator */
+#main {
+    display: grid;
+    float: center;
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    background-color: grey;
+    padding: 10px 10px 25px;
+}
+
+/* container for display */
+#display {
+    display: grid;
+    height: 100px;
+    justify-content: right;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: rgb(235, 235, 235);
+}
+
+/* container for buttons */
+#buttons {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#displays {
+    font-size: 72px;
+    margin: 5px;
+}
+
+/* title */
+#calculator {
+    font-size: 72px;
+    margin: 10px 0px;
+    color: darkblue;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* class for all buttons */
+.btn {
+    font-size: 2em;
+    margin: 1.5px;
+    border: 1px solid black;
+    background-color: darkgrey;
+    color: rgb(245, 245, 245);
+}
+
+/* color specific buttons */
+#equal {
+    background-color: orange;
+}
+
+#clear {
+    background-color: rgb(138, 0, 0);
+}
+
+.num {
+    background-color: rgb(60, 60, 60);
+}
