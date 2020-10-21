@@ -50,9 +50,7 @@ function operate(operator, x, y = 0) {
         result = exp(x);
     } else if (operator === "sqrt") {
         result = sqrt(x);
-    } else if (operator === "modulo") {
-        result = modulo(x, y);
-    }
+    } 
     return result;
 }
 
@@ -104,6 +102,14 @@ buttons.forEach(btn => btn.addEventListener("click", function(){
         operator = "";
         num2 = "";
         displayText.textContent = "";
+    } else if (btnValue === "back") {
+        if (operator === "" && num1.length > 0) {
+            num1 = num1.slice(0, -1);
+            displayText.textContent = num1;
+        } else if (num2.length > 0) {
+            num2 = num2.slice(0, -1);
+            displayText.textContent = num2;
+        }
     } else {
         // for all operators
         if (num2 !== "") {

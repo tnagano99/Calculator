@@ -63,7 +63,7 @@ body {
     background-color: orange;
 }
 
-#clear {
+#clear, #back {
     background-color: rgb(138, 0, 0);
 }
 
